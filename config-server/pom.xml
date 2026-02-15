@@ -8,14 +8,24 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>billing-service</artifactId>
-    <name>Billing Service</name>
+    <artifactId>config-server</artifactId>
+    <name>Config Server</name>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 </project>
